@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Zen+Kaku+Gothic+Antique:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: "Lucida Console", "Courier New", monospace; */
+}
+
+header{
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(https://www.zdnet.com/a/img/resize/6663300cce1cab8568d110e78cf01d20b42f452b/2020/10/09/ae2acdd8-c06b-4ee9-92cf-fe0fdb0be568/how-to-be-prepared-for-a-phishing-attack-5f7f3470e6d2502094fc0c8a-1-oct-09-2020-13-09-28-poster.jpg?width=1200&height=675&fit=crop&auto=webp);
+    background-position: center;
+}
+ul{
+    list-style-type: none;
+    float: right;
+}
+
+
+ul li{
+    display: inline-block;
+    margin-top: 25px;
+    font-size: medium;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    color: black;
+    background-color: white;
+   
+}
+
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+    margin: 18px;
+    border-radius: 5px;
+    
+}
+.navbar{
+    max-width: 1300px;
+    margin: auto;
+}
+ul li.active a{
+    color: black;
+    background-color: white;
+    padding: 10px 30px;
+    font-size: medium;
+}
+.title p{
+    position: absolute;
+    top: 40%;
+    left: 22%;
+    transform: translate(-50%,-50%);
+    font-family: 'Bebas Neue', cursive;
+}
+.title p{
+    color: whitesmoke;
+    font-size: 60px;
+}
+.title h2{
+    position: absolute;
+    top: 56%;
+    left: 7%;
+    color: rgba(255, 255, 255, 0.4);
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+/* .button{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    padding: 10px 60px;
+    border: 1px solid white;
+    transition: 0.6s ease;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 20px;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+} */
+.popup{
+    width: 100%;
+    height: 100vh;
+    background-color:rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.popup-content{
+    width: 480px;
+    height: 350px;
+    background-color: white; 
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+.popup-content img{
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px;
+}
+.popup-content input{
+    padding: 10px;
+    width: 230px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.sub-btn{
+    width: 140px;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.sub-btn:hover{
+    background-color: white;
+    color: darkblue;
+    border: 1px solid darkblue;
+}
+
+.close{
+    position: absolute;
+    top: 3px;
+    right: 18px;
+    font-size: 35px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.close:hover{
+    color: red;
+    font-weight: 800;
+}
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+
+.checkurl input{
+    position: absolute;
+    top: 66%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    padding: 10px 15px;
+    size: 200;
+    border: 1px solid red;
+    border-radius: 15px;
+    width: 350px;
+}
+.buttonclick{
+    position: absolute;
+    top: 70%;
+    left: 12%;
+}
+
+.todobtn{
+    padding: 8px;
+    font-size: 15px;
+    border: none;
+    background: -webkit-linear-gradient(0deg,white 50%,#27e8a7 50%);
+    background-size: 400px 80px;
+    margin-top: 30px;
+    border: 3px solid #27e8a7;
+    width: 200px;
+    transition: 0.6s ease-in;
+    border-radius: 2px;
+    font-family: "lato",sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.todobtn::after{
+    content: "Check";
+}
+.todobtn:hover::after{
+    content: "Check";
+
+}
+.todobtn:hover{
+    background-position: 200px 0;
+    /* border: 1px solid white;
+    color: white;
+    box-shadow: 0 0 10px white; */
+}
